@@ -1,0 +1,4 @@
+name: RainbowBiomes
+version: '${project.version}'
+main: net.david85258.rainbowbiomes.RainbowBiomes
+api-version: 1.19
