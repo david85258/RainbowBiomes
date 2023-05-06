@@ -25,6 +25,8 @@ public final class RainbowBiomes extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         world = new WorldCreator("testRainbowBiomes").generator(new CustomChunkGenerator()).biomeProvider(new CustomBiomeProvider()).createWorld();
+        new WorldCreator("testRainbowBiomes2").generator(new CustomChunkGenerator()).seed(1349691102294581183L).createWorld();
+        new WorldCreator("testRainbowBiomes3").seed(1349691102294581183L).createWorld();
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(this, this);
         log(ChatColor.WHITE + this.getName() + " se a inicado correctamente.");

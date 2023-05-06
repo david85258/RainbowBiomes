@@ -15,8 +15,8 @@ import java.util.Random;
 public class CustomChunkGenerator extends ChunkGenerator {
 
     @Override
-    public void generateNoise(WorldInfo worldInfo, Random random, int chunkX, int chunkZ, ChunkData chunkData) {
-        super.generateNoise(worldInfo, random, chunkX, chunkZ, chunkData);
+    public void generateSurface(WorldInfo worldInfo, Random random, int chunkX, int chunkZ, ChunkData chunkData) {
+        super.generateSurface(worldInfo, random, chunkX, chunkZ, chunkData);
         for (int x = 0; x < 16; x++)
             for (int z = 0; z < 16; z++)
                 for (int y = worldInfo.getMinHeight(); y <= worldInfo.getMaxHeight(); y++){
